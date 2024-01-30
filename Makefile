@@ -1,11 +1,8 @@
-start:
+run:
 	go run .
 
-dev:
-	go run . -dev
-
 rebuild: build-client
-	go run . -dev
+	go run .
 
 build-client:
 	cd web && pnpm run build
